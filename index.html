@@ -9,15 +9,15 @@
 <title>Deep Shah, Ph.D. | Hydrology & Water Resources</title>
 
 <meta
-  name="description"
-  content="Deep Shah is a hydrologist and water resources researcher working on reservoirs, droughts, remote sensing, hydrological forecasting, and water resources systems."
+    name="description"
+    content="Deep Shah is a hydrologist and water resources researcher working on reservoirs, droughts, remote sensing, hydrological forecasting, and water resources systems."
 >
 
 <style>
 
-/* ==========================================================
-   BASIC
-========================================================== */
+/* =========================================================
+   GLOBAL
+========================================================= */
 
 * {
     margin: 0;
@@ -30,11 +30,18 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                 Roboto, Helvetica, Arial, sans-serif;
-    color: #263746;
-    background: #ffffff;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
     line-height: 1.7;
+    color: #293b48;
+    background: #ffffff;
 }
 
 a {
@@ -44,6 +51,7 @@ a {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 .container {
@@ -58,135 +66,143 @@ section {
 }
 
 .section-label {
-    color: #0d7fa5;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1.6px;
     font-size: 0.82rem;
-    margin-bottom: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-weight: 750;
+    color: #0b86ad;
+    margin-bottom: 8px;
 }
 
 .section-title {
-    color: #10364a;
+    color: #103a4f;
     font-size: 2.45rem;
     line-height: 1.2;
     margin-bottom: 18px;
 }
 
 .section-description {
-    max-width: 760px;
-    color: #657582;
+    color: #697985;
     font-size: 1.05rem;
-    margin-bottom: 48px;
+    max-width: 800px;
+    margin-bottom: 45px;
 }
 
 
-/* ==========================================================
+/* =========================================================
    NAVIGATION
-========================================================== */
+========================================================= */
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255,255,255,0.96);
-    border-bottom: 1px solid #e7edf1;
+
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid #e4ebef;
     backdrop-filter: blur(10px);
 }
 
 nav {
     max-width: 1180px;
     margin: auto;
-    padding: 17px 28px;
+
+    padding: 16px 28px;
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    font-weight: 800;
-    color: #10364a;
+    color: #10384c;
     font-size: 1.25rem;
-    letter-spacing: 0.4px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
 }
 
 .logo span {
+    color: #74828a;
     font-weight: 400;
-    color: #6d7d87;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
-    gap: 27px;
     align-items: center;
+    gap: 25px;
+    list-style: none;
 }
 
 .nav-links a {
-    font-weight: 600;
-    color: #405260;
-    font-size: 0.92rem;
-    transition: color 0.2s;
+    font-size: 0.91rem;
+    font-weight: 650;
+    color: #455966;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #087fa7;
+    color: #087fa6;
 }
 
 .cv-nav {
+    background: #087fa6;
     color: white !important;
-    background: #087fa7;
+
     padding: 9px 15px;
     border-radius: 6px;
 }
 
 .mobile-menu-button {
     display: none;
+
+    background: transparent;
     border: none;
-    background: none;
+
     font-size: 1.6rem;
-    color: #10364a;
+    color: #10384c;
     cursor: pointer;
 }
 
 
-/* ==========================================================
+/* =========================================================
    HERO
-========================================================== */
+========================================================= */
 
 .hero {
     position: relative;
     overflow: hidden;
-    background:
-        radial-gradient(circle at 90% 20%, rgba(51,167,200,0.22), transparent 35%),
-        radial-gradient(circle at 10% 80%, rgba(50,121,148,0.15), transparent 36%),
-        linear-gradient(135deg, #082d42 0%, #0f4e68 55%, #116e8b 100%);
-    color: white;
-}
 
-.hero::after {
-    content: "";
-    position: absolute;
-    width: 470px;
-    height: 470px;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 50%;
-    right: -190px;
-    top: -130px;
+    color: white;
+
+    background:
+        radial-gradient(circle at 90% 20%,
+        rgba(70, 183, 212, 0.25),
+        transparent 35%),
+
+        radial-gradient(circle at 10% 90%,
+        rgba(58, 142, 170, 0.20),
+        transparent 35%),
+
+        linear-gradient(
+            135deg,
+            #082d42 0%,
+            #0f506a 55%,
+            #13718d 100%
+        );
 }
 
 .hero-inner {
-    min-height: 720px;
+    min-height: 700px;
+
     display: grid;
     grid-template-columns: 1.35fr 0.8fr;
-    align-items: center;
+
     gap: 70px;
-    position: relative;
-    z-index: 2;
+    align-items: center;
 }
 
 .hero-tag {
-    color: #9ee2ef;
+    color: #a9e7f2;
     font-size: 1rem;
     font-weight: 650;
     margin-bottom: 18px;
@@ -194,44 +210,54 @@ nav {
 
 .hero h1 {
     font-size: 4.8rem;
-    line-height: 1.03;
-    margin-bottom: 18px;
+    line-height: 1.02;
     letter-spacing: -2px;
+
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
     display: block;
-    color: #9ee2ef;
-    font-size: 2rem;
-    margin-top: 17px;
+
+    font-size: 1.9rem;
     letter-spacing: -0.5px;
+
     font-weight: 500;
+    color: #a9e7f2;
+
+    margin-top: 17px;
 }
 
 .hero-description {
-    max-width: 700px;
-    color: #d9eef4;
-    font-size: 1.12rem;
-    margin-bottom: 32px;
+    max-width: 720px;
+
+    color: #dceff4;
+    font-size: 1.1rem;
+
+    margin-bottom: 30px;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    gap: 14px;
     flex-wrap: wrap;
 }
 
 .button {
-    padding: 12px 21px;
-    border-radius: 6px;
-    font-weight: 650;
     display: inline-block;
-    transition: all 0.2s;
+
+    padding: 12px 21px;
+
+    border-radius: 6px;
+
+    font-weight: 650;
+
+    transition: all 0.2s ease;
 }
 
 .button-primary {
-    background: #ffffff;
-    color: #0a526d;
+    background: white;
+    color: #0c526b;
 }
 
 .button-primary:hover {
@@ -239,12 +265,12 @@ nav {
 }
 
 .button-outline {
-    border: 1px solid rgba(255,255,255,0.65);
+    border: 1px solid rgba(255,255,255,0.7);
     color: white;
 }
 
 .button-outline:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.10);
 }
 
 .hero-photo-wrap {
@@ -255,32 +281,40 @@ nav {
 .hero-photo {
     width: 350px;
     height: 350px;
+
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center 18%;
+
     border-radius: 50%;
-    border: 7px solid rgba(255,255,255,0.18);
-    box-shadow: 0 25px 65px rgba(0,0,0,0.25);
+
+    border: 7px solid rgba(255,255,255,0.17);
+
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,0.27);
 }
 
 
-/* ==========================================================
+/* =========================================================
    QUICK INFO
-========================================================== */
+========================================================= */
 
 .quick-info {
-    background: #f5f9fb;
-    border-bottom: 1px solid #e4edf2;
+    background: #f4f9fb;
+    border-bottom: 1px solid #e1ebef;
 }
 
 .quick-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 30px 0;
+
+    padding: 28px 0;
 }
 
 .quick-item {
-    padding: 0 25px;
-    border-right: 1px solid #d8e3e8;
+    padding: 0 23px;
+
+    border-right: 1px solid #d8e4e9;
 }
 
 .quick-item:last-child {
@@ -289,42 +323,47 @@ nav {
 
 .quick-item strong {
     display: block;
-    color: #113a50;
-    font-size: 1.12rem;
+
+    color: #123b50;
+    font-size: 1.08rem;
 }
 
 .quick-item span {
     color: #71808a;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
 }
 
 
-/* ==========================================================
+/* =========================================================
    ABOUT
-========================================================== */
+========================================================= */
 
 .about-grid {
     display: grid;
     grid-template-columns: 1.35fr 0.75fr;
+
     gap: 70px;
 }
 
 .about-text p {
+    color: #50616c;
     margin-bottom: 18px;
-    color: #4f606d;
-    font-size: 1.04rem;
+    font-size: 1.03rem;
 }
 
 .info-card {
     background: #f6fafc;
-    border: 1px solid #e0ebf0;
+
+    border: 1px solid #e0e9ed;
+
     border-radius: 12px;
-    padding: 30px;
+
+    padding: 29px;
 }
 
 .info-card h3 {
-    color: #10364a;
-    margin-bottom: 18px;
+    color: #113a4f;
+    margin-bottom: 17px;
 }
 
 .info-list {
@@ -333,8 +372,10 @@ nav {
 
 .info-list li {
     padding: 8px 0;
-    color: #536572;
-    border-bottom: 1px solid #e3ebef;
+
+    color: #586a76;
+
+    border-bottom: 1px solid #e1eaee;
 }
 
 .info-list li:last-child {
@@ -342,9 +383,9 @@ nav {
 }
 
 
-/* ==========================================================
+/* =========================================================
    RESEARCH
-========================================================== */
+========================================================= */
 
 .research {
     background: #f7fafc;
@@ -353,51 +394,64 @@ nav {
 .research-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+
+    gap: 24px;
 }
 
 .research-card {
     background: white;
-    padding: 31px;
-    border: 1px solid #e2eaee;
+
+    border: 1px solid #e1eaee;
+
     border-radius: 12px;
+
+    padding: 30px;
+
     transition: all 0.25s ease;
 }
 
 .research-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 34px rgba(20,60,80,0.08);
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 13px 30px
+        rgba(20,60,80,0.08);
 }
 
 .research-number {
-    font-size: 0.8rem;
+    color: #0c8bb2;
     font-weight: 750;
-    color: #1592ba;
-    margin-bottom: 14px;
+    font-size: 0.82rem;
+    margin-bottom: 13px;
 }
 
 .research-card h3 {
-    color: #123b50;
-    margin-bottom: 12px;
-    font-size: 1.22rem;
+    color: #133c51;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 10px;
 }
 
 .research-card p {
-    color: #667580;
-    font-size: 0.96rem;
+    color: #657581;
+    font-size: 0.95rem;
 }
 
 
-/* ==========================================================
+/* =========================================================
    PROJECTS
-========================================================== */
+========================================================= */
 
 .project {
-    padding: 30px 0;
-    border-bottom: 1px solid #e1e9ed;
     display: grid;
     grid-template-columns: 190px 1fr;
-    gap: 35px;
+
+    gap: 34px;
+
+    padding: 29px 0;
+
+    border-bottom: 1px solid #e0e8ed;
 }
 
 .project:last-child {
@@ -405,24 +459,44 @@ nav {
 }
 
 .project-agency {
-    color: #0e82a8;
-    font-weight: 700;
+    color: #0c84aa;
+
+    font-weight: 750;
 }
 
 .project h3 {
-    color: #153c50;
-    font-size: 1.18rem;
-    margin-bottom: 8px;
+    color: #143c50;
+
+    margin-bottom: 7px;
+
+    font-size: 1.15rem;
 }
 
 .project p {
-    color: #64747f;
+    color: #63747f;
+}
+
+.project-links {
+    margin-top: 10px;
+}
+
+.project-links a {
+    color: #087fa7;
+
+    font-size: 0.88rem;
+    font-weight: 700;
+
+    margin-right: 15px;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
 }
 
 
-/* ==========================================================
+/* =========================================================
    PUBLICATIONS
-========================================================== */
+========================================================= */
 
 .publications {
     background: #f7fafc;
@@ -430,84 +504,132 @@ nav {
 
 .pub-counter {
     display: inline-block;
+
     background: #dff3f8;
-    color: #0a728f;
-    padding: 6px 12px;
+    color: #08748f;
+
+    font-size: 0.88rem;
+    font-weight: 750;
+
+    padding: 6px 13px;
+
     border-radius: 30px;
-    font-size: 0.87rem;
-    font-weight: 700;
-    margin-bottom: 28px;
+
+    margin-bottom: 20px;
+}
+
+.publication-year {
+    color: #0d7798;
+
+    font-size: 1.6rem;
+
+    margin-top: 38px;
+    margin-bottom: 14px;
+
+    padding-bottom: 7px;
+
+    border-bottom: 2px solid #d8edf3;
 }
 
 .publication {
     background: white;
-    margin-bottom: 12px;
+
     border: 1px solid #e1e9ed;
+
     border-radius: 9px;
-    padding: 19px 22px;
+
+    padding: 20px 22px;
+
+    margin-bottom: 13px;
 }
 
 .publication-title {
-    font-weight: 650;
+    font-weight: 675;
+
     color: #183f52;
-    margin-bottom: 5px;
+
+    margin-bottom: 6px;
+}
+
+.publication-title a:hover {
+    color: #087fa7;
 }
 
 .publication-meta {
-    color: #667680;
+    color: #667681;
     font-size: 0.92rem;
 }
 
-.year {
+.publication-links {
+    margin-top: 8px;
+}
+
+.publication-links a {
     color: #087fa7;
+
+    font-size: 0.86rem;
+
     font-weight: 700;
+
+    margin-right: 14px;
+}
+
+.publication-links a:hover {
+    text-decoration: underline;
 }
 
 
-/* ==========================================================
-   EXPERIENCE / EDUCATION
-========================================================== */
+/* =========================================================
+   TIMELINE
+========================================================= */
 
 .timeline {
     border-left: 2px solid #d9e7ed;
-    padding-left: 28px;
+
+    padding-left: 29px;
 }
 
 .timeline-item {
     position: relative;
+
     padding-bottom: 34px;
 }
 
 .timeline-item::before {
     content: "";
+
     position: absolute;
+
     width: 13px;
     height: 13px;
-    background: #1591b6;
+
     border-radius: 50%;
-    left: -35px;
+
+    background: #1591b6;
+
+    left: -36px;
     top: 7px;
 }
 
 .timeline-item h3 {
-    color: #143b4f;
+    color: #153d51;
     font-size: 1.1rem;
 }
 
-.timeline-item .institution {
-    color: #137fa2;
+.institution {
+    color: #0b7fa4;
     font-weight: 650;
 }
 
-.timeline-item .date {
+.date {
     color: #7a8992;
     font-size: 0.9rem;
 }
 
 
-/* ==========================================================
+/* =========================================================
    AWARDS
-========================================================== */
+========================================================= */
 
 .awards {
     background: #f7fafc;
@@ -516,14 +638,18 @@ nav {
 .award-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     gap: 18px;
 }
 
 .award {
     background: white;
-    border: 1px solid #e0e9ed;
-    padding: 19px;
+
+    border: 1px solid #e0e8ed;
+
     border-radius: 9px;
+
+    padding: 19px;
 }
 
 .award strong {
@@ -532,42 +658,50 @@ nav {
 
 .award span {
     display: block;
-    color: #78868e;
+
+    color: #78868f;
+
     font-size: 0.9rem;
-    margin-top: 3px;
+
+    margin-top: 4px;
 }
 
 
-/* ==========================================================
+/* =========================================================
    TEACHING
-========================================================== */
+========================================================= */
 
 .teaching-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     gap: 22px;
 }
 
 .teaching-card {
-    border: 1px solid #e1eaee;
+    border: 1px solid #e0e9ed;
+
     border-radius: 10px;
+
     padding: 25px;
 }
 
 .teaching-card h3 {
     color: #153d51;
+
     margin-bottom: 8px;
 }
 
 .teaching-card p {
-    color: #687781;
+    color: #687780;
+
     font-size: 0.95rem;
 }
 
 
-/* ==========================================================
+/* =========================================================
    SKILLS
-========================================================== */
+========================================================= */
 
 .skills {
     background: #f7fafc;
@@ -576,33 +710,43 @@ nav {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+
+    gap: 23px;
 }
 
 .skill-box {
     background: white;
-    border: 1px solid #e0eaee;
+
+    border: 1px solid #e0e9ed;
+
     border-radius: 10px;
+
     padding: 25px;
 }
 
 .skill-box h3 {
     color: #123c51;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 }
 
 .skill-box p {
-    color: #687780;
+    color: #687781;
 }
 
 
-/* ==========================================================
+/* =========================================================
    CONTACT
-========================================================== */
+========================================================= */
 
 .contact {
-    background: linear-gradient(135deg, #092e43, #0d5871);
     color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #092f43,
+            #0d5872
+        );
 }
 
 .contact .section-title {
@@ -610,52 +754,65 @@ nav {
 }
 
 .contact .section-description {
-    color: #d8ebf2;
+    color: #d7ebf2;
 }
 
 .contact-buttons {
     display: flex;
     flex-wrap: wrap;
+
     gap: 12px;
 }
 
 .contact-button {
     border: 1px solid rgba(255,255,255,0.5);
+
     color: white;
+
     padding: 11px 18px;
+
     border-radius: 6px;
+
+    transition: all 0.2s ease;
 }
 
 .contact-button:hover {
     background: white;
-    color: #0a4f68;
+    color: #0a5069;
 }
 
 
-/* ==========================================================
+/* =========================================================
    FOOTER
-========================================================== */
+========================================================= */
 
 footer {
     background: #071f2c;
-    color: #adc3ce;
-    padding: 25px;
+
+    color: #b3c8d2;
+
     text-align: center;
+
+    padding: 25px;
+
     font-size: 0.88rem;
 }
 
 
-/* ==========================================================
+/* =========================================================
    RESPONSIVE
-========================================================== */
+========================================================= */
 
 @media (max-width: 950px) {
 
     .hero-inner {
         grid-template-columns: 1fr;
+
         text-align: center;
-        padding: 85px 0;
+
         gap: 45px;
+
+        padding: 85px 0;
     }
 
     .hero-description {
@@ -677,8 +834,9 @@ footer {
     }
 
     .quick-item {
-        padding: 18px 25px;
         border-right: none;
+
+        padding: 16px 22px;
     }
 
     .about-grid {
@@ -700,23 +858,30 @@ footer {
     }
 
     .hero h1 {
-        font-size: 3.2rem;
+        font-size: 3.1rem;
     }
 
     .hero h1 span {
-        font-size: 1.45rem;
+        font-size: 1.4rem;
     }
 
     .nav-links {
         display: none;
+
         position: absolute;
-        top: 68px;
+
+        top: 66px;
         left: 0;
+
         width: 100%;
+
         flex-direction: column;
+
         background: white;
+
         padding: 25px;
-        border-bottom: 1px solid #e2e9ed;
+
+        border-bottom: 1px solid #e1e9ed;
     }
 
     .nav-links.active {
@@ -737,6 +902,7 @@ footer {
 
     .project {
         grid-template-columns: 1fr;
+
         gap: 8px;
     }
 
@@ -754,35 +920,65 @@ footer {
 <body>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      NAVIGATION
-========================================================== -->
+========================================================= -->
 
 <header>
 
 <nav>
 
 <div class="logo">
-    DEEP SHAH <span>Ph.D.</span>
+DEEP SHAH <span>Ph.D.</span>
 </div>
 
-<button class="mobile-menu-button" onclick="toggleMenu()">
-    ☰
+<button
+    class="mobile-menu-button"
+    onclick="toggleMenu()">
+☰
 </button>
 
-<ul class="nav-links" id="navLinks">
-    <li><a href="#about">About</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#teaching">Teaching</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li>
-        <a class="cv-nav" href="deep-shah-cv.pdf" target="_blank">
-            CV
-        </a>
-    </li>
+<ul
+    class="nav-links"
+    id="navLinks">
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#research">Research</a>
+</li>
+
+<li>
+<a href="#projects">Projects</a>
+</li>
+
+<li>
+<a href="#publications">Publications</a>
+</li>
+
+<li>
+<a href="#experience">Experience</a>
+</li>
+
+<li>
+<a href="#teaching">Teaching</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+<li>
+<a
+    class="cv-nav"
+    href="deep-shah-cv.pdf"
+    target="_blank">
+CV
+</a>
+</li>
+
 </ul>
 
 </nav>
@@ -790,9 +986,9 @@ footer {
 </header>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      HERO
-========================================================== -->
+========================================================= -->
 
 <section class="hero">
 
@@ -806,27 +1002,37 @@ Hydrology · Remote Sensing · Water Resources Systems
 
 <h1>
 Deep Shah
-<span>Hydrologist & Water Resources Researcher</span>
+
+<span>
+Hydrologist &amp; Water Resources Researcher
+</span>
+
 </h1>
 
 <p class="hero-description">
 
-I study how climate variability, hydrological extremes, and human
-water management affect lakes, reservoirs, and freshwater availability.
-My research combines satellite remote sensing, hydrological modeling,
-water-resources systems analysis, and data-driven methods.
+I study how climate variability, hydrological extremes,
+and human water management affect lakes, reservoirs,
+and freshwater availability.
+
+My research integrates satellite remote sensing,
+hydrological modeling, water-resources systems analysis,
+and data-driven approaches.
 
 </p>
 
 <div class="hero-buttons">
 
-<a href="#research" class="button button-primary">
+<a
+    href="#research"
+    class="button button-primary">
 Explore My Research
 </a>
 
-<a href="deep-shah-cv.pdf"
-   target="_blank"
-   class="button button-outline">
+<a
+    href="deep-shah-cv.pdf"
+    target="_blank"
+    class="button button-outline">
 View CV
 </a>
 
@@ -840,8 +1046,7 @@ View CV
 <img
     src="deep-shah.jpg"
     alt="Deep Shah"
-    class="hero-photo"
->
+    class="hero-photo">
 
 </div>
 
@@ -850,81 +1055,145 @@ View CV
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      QUICK INFO
-========================================================== -->
+========================================================= -->
 
 <div class="quick-info">
 
 <div class="container quick-grid">
 
 <div class="quick-item">
-<strong>University of Colorado Boulder</strong>
-<span>Postdoctoral Research Associate</span>
+
+<strong>
+University of Colorado Boulder
+</strong>
+
+<span>
+Postdoctoral Research Associate
+</span>
+
 </div>
+
 
 <div class="quick-item">
-<strong>14</strong>
-<span>Peer-reviewed publications</span>
+
+<strong>
+14
+</strong>
+
+<span>
+Peer-reviewed journal publications
+</span>
+
 </div>
+
 
 <div class="quick-item">
-<strong>Water Resources</strong>
-<span>Reservoirs · Drought · Forecasting</span>
+
+<strong>
+Water Resources Systems
+</strong>
+
+<span>
+Reservoirs · Drought · Forecasting
+</span>
+
 </div>
+
 
 <div class="quick-item">
-<strong>Earth Observation</strong>
-<span>MODIS · VIIRS · GRACE</span>
-</div>
+
+<strong>
+Earth Observation
+</strong>
+
+<span>
+MODIS · VIIRS · GRACE
+</span>
 
 </div>
 
 </div>
 
+</div>
 
-<!-- ==========================================================
+
+<!-- =========================================================
      ABOUT
-========================================================== -->
+========================================================= -->
 
 <section id="about">
 
 <div class="container">
 
-<div class="section-label">About</div>
-<h2 class="section-title">About Me</h2>
+<div class="section-label">
+About
+</div>
+
+<h2 class="section-title">
+About Me
+</h2>
+
 
 <div class="about-grid">
+
 
 <div class="about-text">
 
 <p>
-I am a Postdoctoral Research Associate at the University of Colorado
-Boulder working at the intersection of hydrology, water-resources systems,
-remote sensing, and hydroclimatic extremes.
+
+I am a Postdoctoral Research Associate at the
+University of Colorado Boulder working at the intersection
+of hydrology, water-resources systems, remote sensing,
+hydrological forecasting, and hydroclimatic extremes.
+
 </p>
 
 <p>
-My research focuses on understanding how reservoirs respond to drought,
-climate variability, human water use, and changing hydrological conditions.
-I use satellite observations, hydrological and reservoir-system models,
-and data-driven techniques to analyze freshwater systems from basin to
-global scales.
+
+My research focuses on understanding how reservoirs respond
+to drought, climate variability, human water use, and changing
+hydrological conditions.
+
+I use satellite observations, hydrological models,
+reservoir-system models, and data-driven techniques to study
+freshwater systems from basin to global scales.
+
 </p>
 
 <p>
-My current research includes evaluating how improvements in streamflow
-forecasts translate into better water-management decisions in the
-Colorado River Basin. I use RiverWare and the Colorado River Mid-term
-Modeling System to investigate reservoir operations, pool elevations,
-water-allocation policies, and forecast scenarios.
+
+My current research focuses on evaluating how improvements
+in streamflow forecasts translate into better water-management
+decisions in the Colorado River Basin.
+
+I use RiverWare and the Colorado River Mid-term Modeling
+System (CRMMS) to investigate reservoir operations,
+pool elevations, water-allocation policies, and forecast scenarios.
+
 </p>
 
 <p>
-My broader research has focused on global reservoir monitoring using
-MODIS and VIIRS observations, reservoir-based drought monitoring,
-drought propagation, groundwater and flood variability, and the impacts
-of climate change on water resources.
+
+My broader research has focused on global reservoir monitoring
+using MODIS and VIIRS observations, reservoir-based drought
+monitoring, drought propagation, groundwater and flood variability,
+and climate-change impacts on water resources.
+
+</p>
+
+<p>
+
+<a
+href="https://www.colorado.edu/cadswes/deep-shah"
+target="_blank"
+style="color:#087fa7;font-weight:700;">
+
+University of Colorado Boulder profile ↗
+
+</a>
+
 </p>
 
 </div>
@@ -932,17 +1201,26 @@ of climate change on water resources.
 
 <div class="info-card">
 
-<h3>Research Interests</h3>
+<h3>
+Research Interests
+</h3>
 
 <ul class="info-list">
 
 <li>Hydrology</li>
+
 <li>Remote Sensing</li>
+
 <li>Climate Change</li>
+
 <li>Drought Monitoring</li>
+
 <li>Hydrological Modeling</li>
+
 <li>Water Resources Systems</li>
+
 <li>Reservoir Operations</li>
+
 <li>Hydrological Forecasting</li>
 
 </ul>
@@ -956,20 +1234,31 @@ of climate change on water resources.
 </section>
 
 
-<!-- ==========================================================
-     RESEARCH
-========================================================== -->
+<!-- =========================================================
+     RESEARCH THEMES
+========================================================= -->
 
-<section id="research" class="research">
+<section
+id="research"
+class="research">
 
 <div class="container">
 
-<div class="section-label">Research</div>
-<h2 class="section-title">Research Themes</h2>
+<div class="section-label">
+Research
+</div>
+
+<h2 class="section-title">
+Research Themes
+</h2>
 
 <p class="section-description">
-My work spans satellite hydrology, drought science, reservoir operations,
-forecasting, and water-resources decision making.
+
+My research spans satellite hydrology,
+drought science, reservoir operations,
+hydrological forecasting, and water-resources
+decision making.
+
 </p>
 
 
@@ -978,14 +1267,21 @@ forecasting, and water-resources decision making.
 
 <div class="research-card">
 
-<div class="research-number">01</div>
+<div class="research-number">
+01
+</div>
 
-<h3>Reservoirs from Space</h3>
+<h3>
+Reservoirs from Space
+</h3>
 
 <p>
-Using multi-satellite Earth observations to monitor lake and reservoir
-surface area, storage, evaporation, bathymetry, and long-term changes
-in freshwater availability.
+
+Using multi-satellite Earth observations
+to monitor lake and reservoir surface area,
+storage, evaporation, bathymetry,
+and long-term freshwater dynamics.
+
 </p>
 
 </div>
@@ -993,14 +1289,21 @@ in freshwater availability.
 
 <div class="research-card">
 
-<div class="research-number">02</div>
+<div class="research-number">
+02
+</div>
 
-<h3>Reservoir Droughts</h3>
+<h3>
+Reservoir Droughts
+</h3>
 
 <p>
-Developing reservoir-based drought indicators and understanding
-reservoir vulnerability, drought propagation, preparation time,
-response time, and recovery.
+
+Developing reservoir-based drought indicators
+and investigating reservoir vulnerability,
+drought propagation, preparation,
+response, and recovery.
+
 </p>
 
 </div>
@@ -1008,14 +1311,21 @@ response time, and recovery.
 
 <div class="research-card">
 
-<div class="research-number">03</div>
+<div class="research-number">
+03
+</div>
 
-<h3>Colorado River Operations</h3>
+<h3>
+Colorado River Operations
+</h3>
 
 <p>
-Evaluating how streamflow forecast skill affects reservoir operations,
-water allocation, pool elevations, and system-wide decision making
-across the Colorado River Basin.
+
+Evaluating how streamflow forecast skill affects
+reservoir operations, pool elevations,
+water allocation, and system-wide
+water-management decisions.
+
 </p>
 
 </div>
@@ -1023,14 +1333,21 @@ across the Colorado River Basin.
 
 <div class="research-card">
 
-<div class="research-number">04</div>
+<div class="research-number">
+04
+</div>
 
-<h3>Hydrological Forecasting</h3>
+<h3>
+Hydrological Forecasting
+</h3>
 
 <p>
-Developing and evaluating forecast systems for reservoir storage,
-streamflow, and hydrological conditions using models and
-machine-learning approaches.
+
+Developing and evaluating forecast systems
+for reservoir storage, streamflow,
+and hydrological conditions using models
+and machine-learning approaches.
+
 </p>
 
 </div>
@@ -1038,13 +1355,21 @@ machine-learning approaches.
 
 <div class="research-card">
 
-<div class="research-number">05</div>
+<div class="research-number">
+05
+</div>
 
-<h3>Climate & Water Resources</h3>
+<h3>
+Climate &amp; Water Resources
+</h3>
 
 <p>
-Investigating the effects of climate variability and climate change
-on water availability, droughts, floods, groundwater, and water stress.
+
+Investigating how climate variability
+and climate change influence water availability,
+droughts, floods, groundwater,
+and water stress.
+
 </p>
 
 </div>
@@ -1052,14 +1377,21 @@ on water availability, droughts, floods, groundwater, and water stress.
 
 <div class="research-card">
 
-<div class="research-number">06</div>
+<div class="research-number">
+06
+</div>
 
-<h3>Human–Water Interactions</h3>
+<h3>
+Human–Water Interactions
+</h3>
 
 <p>
-Understanding how irrigation, reservoir operations, groundwater use,
-and other human activities alter hydrological variability and
-freshwater availability.
+
+Understanding how irrigation,
+reservoir operations, groundwater use,
+and other human activities alter
+hydrological variability and freshwater availability.
+
 </p>
 
 </div>
@@ -1072,35 +1404,48 @@ freshwater availability.
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      PROJECTS
-========================================================== -->
+========================================================= -->
 
 <section id="projects">
 
 <div class="container">
 
-<div class="section-label">Projects</div>
-<h2 class="section-title">Selected Research Projects</h2>
+<div class="section-label">
+Projects
+</div>
+
+<h2 class="section-title">
+Selected Research Projects
+</h2>
 
 
 <div class="project">
 
 <div class="project-agency">
-Bureau of Reclamation & NOAA
+Bureau of Reclamation &amp; NOAA
 </div>
 
 <div>
 
 <h3>
-How Do Improvements in Streamflow Forecasts Translate into Better
-Water Management Decisions in the Colorado River Basin?
+
+How Do Improvements in Streamflow Forecasts Translate
+into Better Water Management Decisions
+in the Colorado River Basin?
+
 </h3>
 
 <p>
-Applying RiverWare and the Colorado River Mid-term Modeling System
-(CRMMS) to evaluate reservoir operations, water-allocation rules,
-pool elevations, and alternative streamflow forecast scenarios.
+
+Applying RiverWare and the Colorado River
+Mid-term Modeling System (CRMMS)
+to evaluate reservoir operations,
+water-allocation rules,
+pool elevations,
+and alternative streamflow forecast scenarios.
+
 </p>
 
 </div>
@@ -1110,19 +1455,24 @@ pool elevations, and alternative streamflow forecast scenarios.
 
 <div class="project">
 
-<div class="project-agency">NASA</div>
+<div class="project-agency">
+NASA
+</div>
 
 <div>
 
 <h3>
-Drought Propagation from Meteorological to Reservoir Droughts
-at a Global Scale
+Drought Propagation from Meteorological
+to Reservoir Droughts at a Global Scale
 </h3>
 
 <p>
-Developed a reservoir-specific drought propagation framework to
-quantify preparation and response times and identify reservoirs with
-rapid drought propagation and prolonged recovery.
+
+Developed a reservoir-specific drought propagation framework
+to quantify preparation and response times
+and identify reservoirs with rapid drought propagation
+and prolonged recovery.
+
 </p>
 
 </div>
@@ -1132,74 +1482,119 @@ rapid drought propagation and prolonged recovery.
 
 <div class="project">
 
-<div class="project-agency">NASA</div>
-
-<div>
-
-<h3>NASA Global Water Reservoir Product Suite</h3>
-
-<p>
-Contributed to the development of a global reservoir dataset using
-MODIS and VIIRS observations and investigated the contribution of
-surface-water storage dynamics to total water-storage variability.
-</p>
-
+<div class="project-agency">
+NASA
 </div>
-
-</div>
-
-
-<div class="project">
-
-<div class="project-agency">NASA</div>
-
-<div>
-
-<h3>Reservoir-Based Drought Monitoring System</h3>
-
-<p>
-Developed a global reservoir drought-monitoring framework combining
-storage and evaporation observations and investigated natural and
-human influences on freshwater availability.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="project">
-
-<div class="project-agency">Government of India</div>
-
-<div>
-
-<h3>Drought Onset and Termination in India</h3>
-
-<p>
-Developed an Integrated Drought Index for monitoring meteorological,
-agricultural, and hydrological droughts and supporting drought
-detection and early warning.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="project">
-
-<div class="project-agency">Government of India</div>
 
 <div>
 
 <h3>
-Climate Change Impacts on Water Resources of the Sabarmati Basin
+NASA Global Water Reservoir Product Suite
 </h3>
 
 <p>
-Assessed future water availability, water stress, drivers, and
-uncertainties using global climate-model projections.
+
+Contributed to the development of a global reservoir dataset
+using MODIS and VIIRS observations
+and investigated the contribution
+of surface-water storage dynamics
+to total water-storage variability.
+
+</p>
+
+<div class="project-links">
+
+<a
+href="https://landweb.modaps.eosdis.nasa.gov/lake"
+target="_blank">
+NASA GWR Product ↗
+</a>
+
+<a
+href="https://github.com/beingdeepshah/MODIS_VIIRS_GWR_Codes"
+target="_blank">
+GitHub Code ↗
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="project">
+
+<div class="project-agency">
+NASA
+</div>
+
+<div>
+
+<h3>
+Reservoir-Based Drought Monitoring System
+</h3>
+
+<p>
+
+Developed a global reservoir drought-monitoring framework
+combining storage and evaporation observations
+and investigated natural and human influences
+on long-term freshwater availability.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="project">
+
+<div class="project-agency">
+Ministry of Water Resources, India
+</div>
+
+<div>
+
+<h3>
+Drought Onset and Termination in India
+</h3>
+
+<p>
+
+Developed an Integrated Drought Index
+for monitoring meteorological,
+agricultural, and hydrological droughts
+and supporting drought detection
+and early warning.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="project">
+
+<div class="project-agency">
+Government of India
+</div>
+
+<div>
+
+<h3>
+Impacts of Climate Change on Water Resources
+of the Sabarmati Basin
+</h3>
+
+<p>
+
+Assessed future water availability,
+water stress, potential drivers,
+and uncertainties using global climate-model projections.
+
 </p>
 
 </div>
@@ -1212,180 +1607,623 @@ uncertainties using global climate-model projections.
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      PUBLICATIONS
-========================================================== -->
+========================================================= -->
 
-<section id="publications" class="publications">
+<section
+id="publications"
+class="publications">
 
 <div class="container">
 
-<div class="section-label">Publications</div>
-<h2 class="section-title">Peer-Reviewed Publications</h2>
+<div class="section-label">
+Publications
+</div>
+
+<h2 class="section-title">
+Peer-Reviewed Publications
+</h2>
+
+<p class="section-description">
+
+Peer-reviewed journal articles organized
+from newest to oldest.
+Click a paper title or the paper link
+to access the publication.
+
+</p>
 
 <div class="pub-counter">
 14 peer-reviewed journal publications
 </div>
 
 
+<!-- 2026 -->
+
+<h3 class="publication-year">
+2026
+</h3>
+
+
 <div class="publication">
+
 <div class="publication-title">
-Global irrigation reservoirs are at a higher risk of water shortages
+
+<a
+href="https://doi.org/10.1038/s43247-026-03571-3"
+target="_blank">
+
+Global irrigation reservoirs are at a higher risk
+of water shortages
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Shah, D., Mishra, V., & Gao, H.
-<span class="year">2026</span> · Communications Earth & Environment
+
+<strong>Shah, D.</strong>,
+Mishra, V., &amp; Gao, H.
+
+· <em>Communications Earth &amp; Environment</em>,
+7, 581.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1038/s43247-026-03571-3"
+target="_blank">
+Paper ↗
+</a>
+
 </div>
+
+</div>
+
+
+<!-- 2025 -->
+
+<h3 class="publication-year">
+2025
+</h3>
 
 
 <div class="publication">
+
 <div class="publication-title">
-Global patterns of reservoir fullness and fluctuations during droughts
+
+<a
+href="https://doi.org/10.1088/1748-9326/ae2493"
+target="_blank">
+
+Global patterns of reservoir fullness
+and fluctuations during droughts
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Shah, D., & Gao, H.
-<span class="year">2025</span> · Environmental Research Letters, 20(12), 124060
+
+<strong>Shah, D.</strong> &amp; Gao, H.
+
+· <em>Environmental Research Letters</em>,
+20(12), 124060.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1088/1748-9326/ae2493"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
 </div>
 
 
 <div class="publication">
+
 <div class="publication-title">
-Regional variations in drivers of extreme reference evapotranspiration
+
+<a
+href="https://doi.org/10.1029/2025WR040177"
+target="_blank">
+
+Regional variations in drivers
+of extreme reference evapotranspiration
 across the contiguous United States
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Zhao, B., Horvat, C., Pearson, C., Shah, D., & Gao, H.
-<span class="year">2025</span> · Water Resources Research
+
+Zhao, B., Horvat, C., Pearson, C.,
+<strong>Shah, D.</strong>, &amp; Gao, H.
+
+· <em>Water Resources Research</em>,
+61(10), e2025WR040177.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1029/2025WR040177"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
 </div>
 
 
 <div class="publication">
+
 <div class="publication-title">
-3D-LAKES: Three-Dimensional Global Lake and Reservoir Bathymetry
+
+<a
+href="https://doi.org/10.1038/s41597-025-05911-y"
+target="_blank">
+
+3D-LAKES:
+Three-Dimensional Global Lake and Reservoir Bathymetry
 from ICESat-2 Altimetry and Landsat Imagery
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Huang, C. H., Zhang, S., Shah, D., et al.
-<span class="year">2025</span> · Scientific Data
+
+Huang, C. H., Zhang, S.,
+<strong>Shah, D.</strong>,
+Yadav, A., Li, Y., Zhao, G., &amp; Gao, H.
+
+· <em>Scientific Data</em>,
+12, 1625.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1038/s41597-025-05911-y"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
+</div>
+
+
+<!-- 2024 -->
+
+<h3 class="publication-year">
+2024
+</h3>
+
+
+<div class="publication">
+
+<div class="publication-title">
+
+<a
+href="https://doi.org/10.1016/j.rse.2023.113963"
+target="_blank">
+
+Continuity Between NASA MODIS Collection 6.1
+and VIIRS Collection 2 Products
+
+</a>
+
+</div>
+
+<div class="publication-meta">
+
+Román, M., Justice, C., ...,
+<strong>Shah, D.</strong>, &amp; Gao, H.
+
+· <em>Remote Sensing of Environment</em>,
+302, 113963.
+
+</div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1016/j.rse.2023.113963"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
 </div>
 
 
 <div class="publication">
+
 <div class="publication-title">
-Continuity Between NASA MODIS Collection 6.1 and VIIRS Collection 2 Products
+
+<a
+href="https://doi.org/10.1038/s41597-024-03028-2"
+target="_blank">
+
+Transitioning from MODIS to VIIRS
+Global Water Reservoir Product
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Román, M., Justice, C., ..., Shah, D., & Gao, H.
-<span class="year">2024</span> · Remote Sensing of Environment
+
+<strong>Shah, D.</strong>,
+Zhang, S., Sarkar, S.,
+Davidson, C., Zhang, R.,
+Zhao, M., ..., &amp; Gao, H.
+
+· <em>Scientific Data</em>,
+11, 209.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1038/s41597-024-03028-2"
+target="_blank">
+Paper ↗
+</a>
+
+<a
+href="https://github.com/beingdeepshah/MODIS_VIIRS_GWR_Codes"
+target="_blank">
+Code ↗
+</a>
+
+</div>
+
 </div>
 
 
 <div class="publication">
+
 <div class="publication-title">
-Transitioning from MODIS to VIIRS Global Water Reservoir Product
+
+<a
+href="https://doi.org/10.1029/2023GL106159"
+target="_blank">
+
+Assessing Global Reservoir-Based Hydrological Droughts
+by Fusing Storage and Evaporation
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Shah, D., Zhang, S., Sarkar, S., et al.
-<span class="year">2024</span> · Scientific Data
+
+<strong>Shah, D.</strong>,
+Zhao, G., Li, Y., Singh, V. P.,
+&amp; Gao, H.
+
+· <em>Geophysical Research Letters</em>,
+51(1), e2023GL106159.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1029/2023GL106159"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
+</div>
+
+
+<!-- 2021 -->
+
+<h3 class="publication-year">
+2021
+</h3>
+
+
+<div class="publication">
+
+<div class="publication-title">
+
+<a
+href="https://doi.org/10.1016/j.scitotenv.2021.144959"
+target="_blank">
+
+Contrasting influence of human activities
+on agricultural and hydrological droughts in India
+
+</a>
+
+</div>
+
+<div class="publication-meta">
+
+<strong>Shah, D.</strong>,
+Shah, H., Dave, H., &amp; Mishra, V.
+
+· <em>Science of the Total Environment</em>,
+774, 144959.
+
+</div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1016/j.scitotenv.2021.144959"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
 </div>
 
 
 <div class="publication">
+
 <div class="publication-title">
-Assessing Global Reservoir-Based Hydrological Droughts by Fusing
-Storage and Evaporation
+
+<a
+href="https://doi.org/10.1029/2020JD033566"
+target="_blank">
+
+Strong influence of changes in terrestrial water storage
+on flood potential in India
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Shah, D., Zhao, G., Li, Y., Singh, V. P., & Gao, H.
-<span class="year">2024</span> · Geophysical Research Letters
+
+<strong>Shah, D.</strong> &amp; Mishra, V.
+
+· <em>Journal of Geophysical Research:
+Atmospheres</em>,
+e2020JD033566.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1029/2020JD033566"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
 </div>
 
 
 <div class="publication">
+
 <div class="publication-title">
-Contrasting influence of human activities on agricultural and
-hydrological droughts in India
+
+<a
+href="https://doi.org/10.3390/rs13040565"
+target="_blank">
+
+NASA's Water Reservoir Product Suite
+from Moderate Resolution Remote Sensing Data
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Shah, D., Shah, H., Dave, H., & Mishra, V.
-<span class="year">2021</span> · Science of the Total Environment
+
+Li, Y., Zhao, G.,
+<strong>Shah, D.</strong>,
+Zhao, M., Sarkar, S., Devadiga, S.,
+Zhao, B., Zhang, S., &amp; Gao, H.
+
+· <em>Remote Sensing</em>,
+13(4), 565.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.3390/rs13040565"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
+</div>
+
+
+<!-- 2020 -->
+
+<h3 class="publication-year">
+2020
+</h3>
+
+
+<div class="publication">
+
+<div class="publication-title">
+
+<a
+href="https://doi.org/10.1029/2019WR026284"
+target="_blank">
+
+Integrated Drought Index (IDI)
+for Drought Monitoring and Assessment in India
+
+</a>
+
+</div>
+
+<div class="publication-meta">
+
+<strong>Shah, D.</strong> &amp; Mishra, V.
+
+· <em>Water Resources Research</em>,
+56(2), e2019WR026284.
+
+</div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1029/2019WR026284"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
 </div>
 
 
 <div class="publication">
+
 <div class="publication-title">
-Strong influence of changes in terrestrial water storage on flood
-potential in India
-</div>
-<div class="publication-meta">
-Shah, D., & Mishra, V.
-<span class="year">2021</span> · Journal of Geophysical Research: Atmospheres
-</div>
-</div>
 
+<a
+href="https://doi.org/10.1029/2020JD032871"
+target="_blank">
 
-<div class="publication">
-<div class="publication-title">
-NASA’s water reservoir product suite from moderate resolution
-remote sensing data
-</div>
-<div class="publication-meta">
-Li, Y., Zhao, G., Shah, D., et al.
-<span class="year">2021</span> · Remote Sensing
-</div>
-</div>
-
-
-<div class="publication">
-<div class="publication-title">
-Integrated Drought Index for drought monitoring and assessment in India
-</div>
-<div class="publication-meta">
-Shah, D., & Mishra, V.
-<span class="year">2020</span> · Water Resources Research
-</div>
-</div>
-
-
-<div class="publication">
-<div class="publication-title">
 Drought onset and termination in India
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Shah, D., & Mishra, V.
-<span class="year">2020</span> · Journal of Geophysical Research: Atmospheres
+
+<strong>Shah, D.</strong> &amp; Mishra, V.
+
+· <em>Journal of Geophysical Research:
+Atmospheres</em>,
+125(15), e2020JD032871.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1029/2020JD032871"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
 </div>
 
 
 <div class="publication">
+
 <div class="publication-title">
-Propagation of meteorological to hydrological droughts in India
+
+<a
+href="https://doi.org/10.1029/2020JD033455"
+target="_blank">
+
+Propagation of meteorological
+to hydrological droughts in India
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Bhardwaj, K., Shah, D., Aadhar, S., & Mishra, V.
-<span class="year">2020</span> · Journal of Geophysical Research: Atmospheres
+
+Bhardwaj, K.,
+<strong>Shah, D.</strong>,
+Aadhar, S., &amp; Mishra, V.
+
+· <em>Journal of Geophysical Research:
+Atmospheres</em>,
+125(22), e2020JD033455.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1029/2020JD033455"
+target="_blank">
+Paper ↗
+</a>
+
 </div>
+
+</div>
+
+
+<!-- 2019 -->
+
+<h3 class="publication-year">
+2019
+</h3>
 
 
 <div class="publication">
+
 <div class="publication-title">
-On the changes in groundwater storage variability in western India
-using GRACE and well observations
+
+<a
+href="https://doi.org/10.1007/s41976-019-00026-6"
+target="_blank">
+
+On the changes in groundwater storage variability
+in western India using GRACE and well observations
+
+</a>
+
 </div>
+
 <div class="publication-meta">
-Meghwal, R., Shah, D., & Mishra, V.
-<span class="year">2019</span> · Remote Sensing in Earth Systems Sciences
+
+Meghwal, R.,
+<strong>Shah, D.</strong>,
+&amp; Mishra, V.
+
+· <em>Remote Sensing in Earth Systems Sciences</em>,
+2(4), 260–272.
+
 </div>
+
+<div class="publication-links">
+
+<a
+href="https://doi.org/10.1007/s41976-019-00026-6"
+target="_blank">
+Paper ↗
+</a>
+
+</div>
+
 </div>
 
 
@@ -1394,23 +2232,31 @@ Meghwal, R., Shah, D., & Mishra, V.
 </section>
 
 
-<!-- ==========================================================
-     EXPERIENCE
-========================================================== -->
+<!-- =========================================================
+     ACADEMIC EXPERIENCE
+========================================================= -->
 
 <section id="experience">
 
 <div class="container">
 
-<div class="section-label">Career</div>
-<h2 class="section-title">Academic Experience</h2>
+<div class="section-label">
+Career
+</div>
+
+<h2 class="section-title">
+Academic Experience
+</h2>
+
 
 <div class="timeline">
 
 
 <div class="timeline-item">
 
-<h3>Postdoctoral Research Associate</h3>
+<h3>
+Postdoctoral Research Associate
+</h3>
 
 <div class="institution">
 University of Colorado Boulder
@@ -1425,10 +2271,12 @@ April 2026 – Present
 
 <div class="timeline-item">
 
-<h3>Postdoctoral Researcher</h3>
+<h3>
+Postdoctoral Researcher
+</h3>
 
 <div class="institution">
-Texas A&M University
+Texas A&amp;M University
 </div>
 
 <div class="date">
@@ -1440,10 +2288,12 @@ October 2024 – April 2026
 
 <div class="timeline-item">
 
-<h3>Graduate Research Assistant</h3>
+<h3>
+Graduate Research Assistant
+</h3>
 
 <div class="institution">
-Texas A&M University
+Texas A&amp;M University
 </div>
 
 <div class="date">
@@ -1455,7 +2305,9 @@ September 2020 – August 2024
 
 <div class="timeline-item">
 
-<h3>Junior Research Fellow</h3>
+<h3>
+Junior Research Fellow
+</h3>
 
 <div class="institution">
 Indian Institute of Technology Gandhinagar
@@ -1475,26 +2327,34 @@ June 2019 – August 2020
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      EDUCATION
-========================================================== -->
+========================================================= -->
 
 <section class="research">
 
 <div class="container">
 
-<div class="section-label">Education</div>
-<h2 class="section-title">Education</h2>
+<div class="section-label">
+Education
+</div>
+
+<h2 class="section-title">
+Education
+</h2>
+
 
 <div class="timeline">
 
 
 <div class="timeline-item">
 
-<h3>Ph.D. in Civil Engineering</h3>
+<h3>
+Ph.D. in Civil Engineering
+</h3>
 
 <div class="institution">
-Texas A&M University, USA
+Texas A&amp;M University, USA
 </div>
 
 <div class="date">
@@ -1506,7 +2366,9 @@ Texas A&M University, USA
 
 <div class="timeline-item">
 
-<h3>M.Tech. in Civil Engineering</h3>
+<h3>
+M.Tech. in Civil Engineering
+</h3>
 
 <div class="institution">
 Indian Institute of Technology Gandhinagar, India
@@ -1521,7 +2383,9 @@ Indian Institute of Technology Gandhinagar, India
 
 <div class="timeline-item">
 
-<h3>B.E. in Civil Engineering</h3>
+<h3>
+B.E. in Civil Engineering
+</h3>
 
 <div class="institution">
 L.D. College of Engineering, India
@@ -1541,53 +2405,104 @@ L.D. College of Engineering, India
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      AWARDS
-========================================================== -->
+========================================================= -->
 
 <section class="awards">
 
 <div class="container">
 
-<div class="section-label">Recognition</div>
-<h2 class="section-title">Selected Honors & Awards</h2>
+<div class="section-label">
+Recognition
+</div>
+
+<h2 class="section-title">
+Selected Honors &amp; Awards
+</h2>
+
 
 <div class="award-grid">
 
 
 <div class="award">
-<strong>Outstanding PhD Dissertation Award</strong>
-<span>Universities Council on Water Resources · 2026</span>
+
+<strong>
+Outstanding PhD Dissertation Award
+</strong>
+
+<span>
+Universities Council on Water Resources · 2026
+</span>
+
 </div>
 
 
 <div class="award">
-<strong>Distinguished Student Award for Excellence in Research</strong>
-<span>Texas A&M University · 2025</span>
+
+<strong>
+Distinguished Student Award
+for Excellence in Research
+</strong>
+
+<span>
+Association of Former Students,
+Texas A&amp;M University · 2025
+</span>
+
 </div>
 
 
 <div class="award">
-<strong>Distinguished Dissertation Award</strong>
-<span>Texas A&M University · 2025</span>
+
+<strong>
+Distinguished Dissertation Award
+</strong>
+
+<span>
+Texas A&amp;M University · 2025
+</span>
+
 </div>
 
 
 <div class="award">
-<strong>3 Minute Thesis Competition — Third Rank</strong>
-<span>Texas A&M Civil Engineering · 2024</span>
+
+<strong>
+3 Minute Thesis Competition
+— Third Rank
+</strong>
+
+<span>
+Texas A&amp;M Civil Engineering · 2024
+</span>
+
 </div>
 
 
 <div class="award">
-<strong>Texas A&M Institute of Data Science Competition</strong>
-<span>First Runner-Up · 2024</span>
+
+<strong>
+Texas A&amp;M Institute of Data Science Competition
+</strong>
+
+<span>
+First Runner-Up · 2024
+</span>
+
 </div>
 
 
 <div class="award">
-<strong>Top Cited Paper of the Year</strong>
-<span>Water Resources Research · 2021–2022</span>
+
+<strong>
+Top Cited Paper of the Year
+</strong>
+
+<span>
+Water Resources Research · 2021–2022
+</span>
+
 </div>
 
 
@@ -1598,16 +2513,21 @@ L.D. College of Engineering, India
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      TEACHING
-========================================================== -->
+========================================================= -->
 
 <section id="teaching">
 
 <div class="container">
 
-<div class="section-label">Teaching</div>
-<h2 class="section-title">Teaching & Mentoring</h2>
+<div class="section-label">
+Teaching
+</div>
+
+<h2 class="section-title">
+Teaching &amp; Mentoring
+</h2>
 
 
 <div class="teaching-grid">
@@ -1615,12 +2535,18 @@ L.D. College of Engineering, India
 
 <div class="teaching-card">
 
-<h3>Guest Lecture — Remote Sensing Hydrology</h3>
+<h3>
+Guest Lecture — Remote Sensing Hydrology
+</h3>
 
 <p>
-University of Oklahoma · Spring 2026. Delivered a lecture on remote
-sensing of surface water, lakes, reservoirs, storage variability,
-and drought impacts.
+
+University of Oklahoma · Spring 2026.
+
+Designed and delivered a lecture on remote sensing
+of surface water, lakes, reservoirs,
+storage variability, and drought impacts.
+
 </p>
 
 </div>
@@ -1628,12 +2554,18 @@ and drought impacts.
 
 <div class="teaching-card">
 
-<h3>Remote Sensing in Hydrology</h3>
+<h3>
+Remote Sensing in Hydrology
+</h3>
 
 <p>
-Texas A&M University · Spring 2023. Teaching Assistant supporting
-laboratory assignments, real-world datasets, student questions,
-and course assessments.
+
+Texas A&amp;M University · Spring 2023.
+
+Teaching Assistant supporting laboratory assignments,
+real-world hydrological datasets,
+student questions, and course assessments.
+
 </p>
 
 </div>
@@ -1641,12 +2573,20 @@ and course assessments.
 
 <div class="teaching-card">
 
-<h3>Monitoring Global Lakes & Reservoirs</h3>
+<h3>
+Monitoring Global Lakes &amp; Reservoirs
+Using Multi-Satellite Observations
+</h3>
 
 <p>
-American Meteorological Society · Spring 2024. Co-instructor for a
-multi-satellite short course supporting more than 100 participants
-from over 50 countries.
+
+American Meteorological Society · Spring 2024.
+
+Co-instructor for a short course supporting
+more than 100 participants from over 50 countries,
+including Google Earth Engine exercises
+and interactive mapping.
+
 </p>
 
 </div>
@@ -1654,11 +2594,17 @@ from over 50 countries.
 
 <div class="teaching-card">
 
-<h3>Student Mentoring</h3>
+<h3>
+Student Mentoring
+</h3>
 
 <p>
-Mentored M.S. students on thesis research, research-paper development,
-advanced hydrology, and remote-sensing applications.
+
+Mentored M.S. students on thesis research,
+research-paper development,
+advanced hydrology,
+and remote-sensing applications.
+
 </p>
 
 </div>
@@ -1671,26 +2617,35 @@ advanced hydrology, and remote-sensing applications.
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      SKILLS
-========================================================== -->
+========================================================= -->
 
 <section class="skills">
 
 <div class="container">
 
-<div class="section-label">Skills</div>
-<h2 class="section-title">Technical Expertise</h2>
+<div class="section-label">
+Skills
+</div>
+
+<h2 class="section-title">
+Technical Expertise
+</h2>
+
 
 <div class="skills-grid">
 
 
 <div class="skill-box">
 
-<h3>Programming & Analysis</h3>
+<h3>
+Programming &amp; Analysis
+</h3>
 
 <p>
-Python · MATLAB · R · Google Earth Engine · CDO · GMT · LaTeX
+Python · MATLAB · R · Google Earth Engine ·
+CDO · GMT · LaTeX
 </p>
 
 </div>
@@ -1698,7 +2653,9 @@ Python · MATLAB · R · Google Earth Engine · CDO · GMT · LaTeX
 
 <div class="skill-box">
 
-<h3>Remote Sensing & Geospatial</h3>
+<h3>
+Remote Sensing &amp; Geospatial
+</h3>
 
 <p>
 ArcGIS · ENVI · MODIS · VIIRS · GRACE
@@ -1709,7 +2666,9 @@ ArcGIS · ENVI · MODIS · VIIRS · GRACE
 
 <div class="skill-box">
 
-<h3>Hydrological & Water Systems Modeling</h3>
+<h3>
+Hydrological &amp; Water Systems Modeling
+</h3>
 
 <p>
 RiverWare · VIC · VIC-SIMGM · SWAT
@@ -1725,28 +2684,40 @@ RiverWare · VIC · VIC-SIMGM · SWAT
 </section>
 
 
-<!-- ==========================================================
-     SERVICE
-========================================================== -->
+<!-- =========================================================
+     PROFESSIONAL SERVICE
+========================================================= -->
 
 <section>
 
 <div class="container">
 
-<div class="section-label">Service</div>
-<h2 class="section-title">Professional Activities</h2>
+<div class="section-label">
+Service
+</div>
+
+<h2 class="section-title">
+Professional Activities
+</h2>
+
 
 <div class="research-grid">
 
 
 <div class="research-card">
 
-<h3>Scientific Leadership</h3>
+<h3>
+Scientific Leadership
+</h3>
 
 <p>
-Chair of the AGU session “Remote Sensing of Water Resources” and
-Co-Convener of the AMS session on monitoring global lakes and
-reservoirs using multi-satellite observations.
+
+Chair of the AGU session
+“Remote Sensing of Water Resources”
+and Co-Convener of the AMS session
+on monitoring global lakes and reservoirs
+using multi-satellite observations.
+
 </p>
 
 </div>
@@ -1754,12 +2725,21 @@ reservoirs using multi-satellite observations.
 
 <div class="research-card">
 
-<h3>Peer Review</h3>
+<h3>
+Peer Review
+</h3>
 
 <p>
-Reviewed more than 25 manuscripts for journals including
-Geophysical Research Letters, Journal of Hydrology, Scientific Data,
-Earth’s Future, and Journal of Geophysical Research: Atmospheres.
+
+Reviewed more than 25 manuscripts
+for journals including
+Geophysical Research Letters,
+Journal of Hydrology,
+Scientific Data,
+Earth’s Future,
+and Journal of Geophysical Research:
+Atmospheres.
+
 </p>
 
 </div>
@@ -1767,11 +2747,16 @@ Earth’s Future, and Journal of Geophysical Research: Atmospheres.
 
 <div class="research-card">
 
-<h3>Professional Affiliations</h3>
+<h3>
+Professional Affiliations
+</h3>
 
 <p>
-American Geophysical Union · American Meteorological Society ·
+
+American Geophysical Union ·
+American Meteorological Society ·
 European Geosciences Union
+
 </p>
 
 </div>
@@ -1784,16 +2769,22 @@ European Geosciences Union
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      CONTACT
-========================================================== -->
+========================================================= -->
 
-<section id="contact" class="contact">
+<section
+id="contact"
+class="contact">
 
 <div class="container">
 
-<div class="section-label" style="color:#9ee2ef;">
+<div
+class="section-label"
+style="color:#a9e7f2;">
+
 Contact
+
 </div>
 
 <h2 class="section-title">
@@ -1802,40 +2793,96 @@ Let's Connect
 
 <p class="section-description">
 
-I am interested in collaborations involving hydrology, remote sensing,
-reservoir operations, droughts, forecasting, and water-resources systems.
+I am interested in collaborations involving
+hydrology, remote sensing,
+reservoir operations,
+droughts, forecasting,
+and water-resources systems.
 
 </p>
 
 
 <div class="contact-buttons">
 
+
 <a
 href="mailto:deep.shah@tamu.edu"
 class="contact-button">
+
 Email
+
 </a>
 
+
 <a
-href="#"
+href="https://scholar.google.com/citations?user=wB8S1PgAAAAJ"
 class="contact-button"
 target="_blank">
+
 Google Scholar
+
 </a>
 
+
 <a
-href="#"
+href="https://www.linkedin.com/in/beingdeepshah"
 class="contact-button"
 target="_blank">
+
 LinkedIn
+
 </a>
+
+
+<a
+href="https://orcid.org/0000-0001-8461-4162"
+class="contact-button"
+target="_blank">
+
+ORCID
+
+</a>
+
+
+<a
+href="https://www.researchgate.net/profile/Deep-Shah-16"
+class="contact-button"
+target="_blank">
+
+ResearchGate
+
+</a>
+
+
+<a
+href="https://github.com/beingdeepshah"
+class="contact-button"
+target="_blank">
+
+GitHub
+
+</a>
+
+
+<a
+href="https://www.colorado.edu/cadswes/deep-shah"
+class="contact-button"
+target="_blank">
+
+CU Boulder
+
+</a>
+
 
 <a
 href="deep-shah-cv.pdf"
 class="contact-button"
 target="_blank">
+
 Curriculum Vitae
+
 </a>
+
 
 </div>
 
@@ -1844,9 +2891,9 @@ Curriculum Vitae
 </section>
 
 
-<!-- ==========================================================
+<!-- =========================================================
      FOOTER
-========================================================== -->
+========================================================= -->
 
 <footer>
 
@@ -1858,19 +2905,30 @@ Curriculum Vitae
 <script>
 
 function toggleMenu() {
-    const menu = document.getElementById("navLinks");
+
+    const menu =
+        document.getElementById("navLinks");
+
     menu.classList.toggle("active");
+
 }
 
-document.querySelectorAll(".nav-links a").forEach(function(link) {
 
-    link.addEventListener("click", function() {
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
 
-        document
-        .getElementById("navLinks")
-        .classList.remove("active");
+    link.addEventListener(
+        "click",
+        function() {
 
-    });
+            document
+            .getElementById("navLinks")
+            .classList
+            .remove("active");
+
+        }
+    );
 
 });
 
